@@ -6,28 +6,46 @@
     <title>The Real Weather App</title>
     <link rel="stylesheet" href="src/app.css" />
   </head>
-  <header>
-    <h1>The Real Weather App</h1>
+  <div class="con">
+    <header>
+      <h1>The Real Weather App</h1>
+    </header>
     <form>
-      <input type="search" placeholder="Enter city..." />
-      <input type="submit" value="Search" />
+      <input
+        type="search"
+        placeholder="Enter city..."
+        class="search-input"
+        id="search-input"
+      />
+      <input
+        class="search-input-button"
+        id="search-input-button"
+        type="submit"
+        value="Search"
+      />
     </form>
-    <main>
+    <body>
       <div id="city"><h2>Durban</h2></div>
-      <div id="icon">img</div>
+      <div id="icon">☀️</div>
       <div id="temp">21</div>
       <div id="unit">°c</div>
-      <div id="date">
-        <p>Friday 15:37pm, cloudy</p>
-        <p>humidity: 55% ,windspeed: 20km</p>
+
+      <p>Friday 15:37pm, cloudy</p>
+      <div id="we">
+        <p>
+          humidity: <strong>55%</strong> ,windspeed:
+          <strong>20km</strong>
+        </p>
       </div>
-    </main>
-  </header>
-  <body>
-    <script src="src/app.js"></script>
-    <footer>
-      This project was Coded by Calida Pillay, is open-sourced on Github and
-      hosted on Netlify
-    </footer>
-  </body>
+      <script src="src/app.js"></script>
+      <footer>
+        This project was Coded by
+        <a href="https://github.com/CalidaPillay">Calida Pillay</a>, is
+        open-sourced on
+        <a href="https://github.com/CalidaPillay/TheRealWeatherApp"> Github</a>
+        and hosted on
+        <a href="https://precious-palmier-45bac9.netlify.app/">Netlify</a>
+      </footer>
+    </body>
+  </div>
 </html>
